@@ -6,6 +6,8 @@ Sentinel aide à comprendre l’état de son PC : mesures matérielles locales, 
 
 ## Télécharger
 
+**[Télécharger Sentinel 2.4.3](https://github.com/ErzaHarmonie/Sentinel-releases/releases/download/v2.4.3/Sentinel-2.4.3-Setup.exe)**
+
 Les installateurs et les notes de version sont disponibles dans les [versions publiées](https://github.com/ErzaHarmonie/Sentinel-releases/releases). Plateforme : Windows 10 (18362 ou plus récent) et Windows 11, x64.
 
 Le paquet inclut le runtime .NET. Les informations sur les composants tiers et le pilote optionnel de mesure matérielle sont présentées dans l’installateur.
@@ -18,12 +20,12 @@ Les calculs restent sur votre PC. Dans **IA locale**, utilisez **Analyser mon PC
 
 ## Mises à jour
 
-À partir de Sentinel 2.3.3, ouvrez **Paramètres → Vérifier les mises à jour**. Vous choisissez le téléchargement et l’installation ; Sentinel vérifie la signature EdDSA du fichier reçu. La recherche n’envoie ni vos mesures matérielles ni votre profil appris.
+Après l’installation de Sentinel 2.4.3, ouvrez **Paramètres → Vérifier les mises à jour**. Vous choisissez le téléchargement et l’installation ; Sentinel vérifie la signature EdDSA du fichier reçu. La recherche n’envoie ni vos mesures matérielles ni votre profil appris.
 
-Si vous utilisez 2.3.2 ou une version antérieure, installez manuellement une première fois la nouvelle version. Fermez Sentinel avant de lancer l’installateur. Les données locales existantes sont conservées. La relance après installation reste manuelle.
+**Si vous utilisez 2.4.2 ou une version antérieure, installez manuellement la 2.4.3 une fois.** La clé de signature historique a été remplacée : cette installation adopte la nouvelle clé pour les mises à jour suivantes. Les anciennes versions peuvent encore indiquer que la 2.4.1 est la dernière version. Fermez Sentinel avant de lancer l’installateur. Les données locales existantes sont conservées. La relance après installation reste manuelle.
 
 Depuis la version 2.4.0, un résumé court présente les nouveautés au premier lancement de chaque nouvelle version. Cliquez sur **Compris** pour le fermer ; il reste consultable dans **À propos → Nouveautés de cette version**.
 
-Le flux public est [appcast.xml](https://github.com/ErzaHarmonie/Sentinel-releases/releases/latest/download/appcast.xml). La signature de mise à jour ne constitue pas une signature Authenticode de l’éditeur Windows.
+Le nouveau flux public est [appcast-v2.xml](https://github.com/ErzaHarmonie/Sentinel-releases/releases/latest/download/appcast-v2.xml). L’ancien fichier `appcast.xml` reste disponible avec la version 2.4.1 pour les anciens clients. La signature de mise à jour ne constitue pas une signature Authenticode de l’éditeur Windows.
 
 Ce dépôt est consacré à la distribution : installateurs, visuels et notes de version. Le code source de Sentinel est conservé séparément.
